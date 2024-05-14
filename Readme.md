@@ -79,11 +79,11 @@ var queryOptions = new airportsQueryOptions {
 
 ```
 var response = apiClient.Execute(queryOptions);
-if(response.Error != null) {
-	Console.WriteLine(response.Error);
+if(response.error != null) {
+	Console.WriteLine(response.error);
 } else {
-    var json = JsonConvert.SerializeObject(response.Data, Newtonsoft.Json.Formatting.Indented);
-    Console.WriteLine(response.Data);
+    var jsonResponse = JsonConvert.SerializeObject(response.data, Newtonsoft.Json.Formatting.Indented);
+    Console.WriteLine(jsonResponse);
 }
 ```
 
