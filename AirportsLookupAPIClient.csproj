@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.AirportsLookup</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/airports</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>Airports is a simple tool for getting airport data. It returns the airport name, location, and more.</Description>
+    <RepositoryUrl>https://github.com/apiverve/airports-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>airports; airport data; airport lookup; airport api; airport data api; airport lookup api; airport lookup data; airport lookup tool; airport lookup software; airport lookup service; airport lookup library; airport lookup sdk; airport lookup code; airport lookup script; airport lookup program; airport lookup application; airport lookup app; airport lookup tool; airport lookup utility; airport lookup helper; airport lookup helper tool; airport lookup helper software; airport lookup helper service; airport lookup helper library; airport lookup helper sdk; airport lookup helper code; airport lookup helper script; airport lookup helper program; airport lookup helper application; airport lookup helper app; airport lookup helper tool; airport lookup helper utility; airport lookup helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
