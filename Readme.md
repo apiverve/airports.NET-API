@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new QueryOptions {
+var queryOptions = new airportsQueryOptions {
   iata = "MCI"
 };
 ```
@@ -78,11 +78,12 @@ var queryOptions = new QueryOptions {
 ###### Simple Request
 
 ```
-var response = apiClient.execute(queryOptions);
-if(response.error != null) {
-	Console.WriteLine(response.error);
+var response = apiClient.Execute(queryOptions);
+if(response.Error != null) {
+	Console.WriteLine(response.Error);
 } else {
-    Console.WriteLine(response);
+    var json = JsonConvert.SerializeObject(response.Data, Newtonsoft.Json.Formatting.Indented);
+    Console.WriteLine(response.Data);
 }
 ```
 
