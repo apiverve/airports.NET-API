@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new airportsQueryOptions {
+var queryOptions = new AirportsLookupQueryOptions {
   iata = "MCI"
 };
 ```
@@ -109,7 +109,8 @@ if(response.error != null) {
       "altName": "",
       "country": "US"
     }
-  }
+  },
+  "code": 200
 }
 ```
 
